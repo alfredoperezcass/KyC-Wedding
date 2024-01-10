@@ -1,0 +1,44 @@
+:host {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 0 0.25rem;
+	position: absolute;
+	top: 10rem;
+}
+
+strong {
+	display: inline-block;
+	width: auto;
+	filter: drop-shadow(0 0 1rem var(--black));
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0 1rem;
+
+	div {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		span {
+			display: inline-block;
+			width: auto;
+			font-size: 3rem;
+			color: var(--white);
+			filter: drop-shadow(0 0 1rem var(--black));
+		}
+
+		small {
+			display: inline-block;
+			width: auto;
+			filter: drop-shadow(0 0 1rem var(--black));
+			font-weight: 400;
+		}
+	}
+}

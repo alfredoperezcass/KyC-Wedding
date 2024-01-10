@@ -1,0 +1,43 @@
+:host {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: calc(100% - 4rem);
+	background-image: url('/assets/images/fondoSecundario.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	gap: 2rem 0;
+}
+
+strong,
+small {
+	display: block;
+	text-align: center;
+}
+
+strong {
+	font-size: 3.5rem;
+}
+
+small {
+	font-size: 1rem;
+}
+
+a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	font-size: 1.5rem;
+	color: var(--accent-dark);
+}
+
+iframe {
+	width: 100%;
+	aspect-ratio: 16/9;
+	border-radius: 1rem;
+	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 16%);
+}

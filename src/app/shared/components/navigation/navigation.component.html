@@ -1,0 +1,18 @@
+<!-- <button type="button" (click)="onToggleMenu()" [class.active]="isMenuActive">
+	<span></span>
+	<span></span>
+	<span></span>
+</button>
+<nav *ngIf="isMenuActive">
+	<button type="button" (click)="changeLang()" class="lang-btn">
+		{{ 'MENU.BUTTON_LANG' | translate }}
+	</button>
+</nav> -->
+<ng-container *ngFor="let nav of navItems$ | async">
+	<a *ngIf="nav.path !== url" [routerLink]="nav.path">
+		{{ nav.label | translate }}
+	</a>
+	<a *ngIf="nav.path === url" [routerLink]="nav.path" class="ornamented">
+		<span>{{ nav.label | translate }}</span>
+	</a>
+</ng-container>

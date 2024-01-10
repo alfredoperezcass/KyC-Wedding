@@ -1,0 +1,26 @@
+<h1 mat-dialog-title>{{ headlining }}</h1>
+<section mat-dialog-content>
+	<ng-container *ngIf="data.isGoogle && data.isChurch">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2648.4213544471972!2d-98.93141834859681!3d20.157672512540902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d17686a926aedf%3A0x452f425f93e55bc3!2sIglesia%20De%20San%20Juan%20Bautista!5e0!3m2!1ses-419!2smx!4v1699504717366!5m2!1ses-419!2smx" 
+			width="600" 
+			height="450" 
+			style="border:0;" 
+			allowfullscreen="" 
+			loading="lazy" 
+			referrerpolicy="no-referrer-when-downgrade">
+		</iframe>
+	</ng-container>
+	<ng-container *ngIf="data.isGoogle && !data.isChurch">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.0257170234377!2d-98.70603539999999!3d20.0912118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a10b63a872d3%3A0x3c1185a3798a337e!2sHacienda%20Santa%20Cecilia!5e0!3m2!1ses-419!2smx!4v1699504802405!5m2!1ses-419!2smx" 
+			width="600" 
+			height="450" 
+			style="border:0;" 
+			allowfullscreen="" 
+			loading="lazy" 
+			referrerpolicy="no-referrer-when-downgrade">
+		</iframe>
+	</ng-container>
+</section>
+<footer mat-dialog-actions align="end">
+	<button mat-flat-button mat-dialog-close>{{ 'BUTTONS.CLOSE' | translate }}</button>
+</footer>

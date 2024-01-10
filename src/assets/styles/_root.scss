@@ -1,0 +1,45 @@
+:root {
+	--white: hsl(0, 0%, 100%);
+	--black: hsl(0, 0%, 0%);
+	--primary: hsl(35, 18%, 81%);
+	--primary-dark: hsl(45, 5%, 57%);
+	--primary-light: hsl(48, 100%, 99%);
+	--accent: hsl(248, 16%, 82%);
+	--accent-dark: hsl(251, 5%, 57%);
+
+	--animate-delay: 160ms;
+}
+
+@font-face {
+	font-family: 'NovaQuinta';
+	src: url('/assets/fonts/NovaQuinta.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Cinzel Decorative';
+	src: url('/assets/fonts/CinzelDecorative.woff') format('woff');
+}
+
+.cursive {
+	font-family: 'NovaQuinta', sans-serif;
+}
+
+.animate__delay-6s {
+	animation-delay: calc(var(--animate-delay) * 6);
+}
+
+.animate__delay-7s {
+	animation-delay: calc(var(--animate-delay) * 7);
+}
+
+.animate__delay-8s {
+	animation-delay: calc(var(--animate-delay) * 8);
+}
+
+.animate__delay-9s {
+	animation-delay: calc(var(--animate-delay) * 9);
+}
+
+.animate__delay-10s {
+	animation-delay: calc(var(--animate-delay) * 10);
+}

@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>{{ headlining }}</h1>
+<section mat-dialog-content>
+	<ng-container *ngIf="data === hotelId.HoteldelValleInn">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.091794078168!2d-98.71361879999999!3d20.0884493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a70dd474ae97%3A0xbc1552c735180db8!2sHotel%20del%20Valle%20Inn!5e0!3m2!1ses-419!2smx!4v1699930645649!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</ng-container>
+	<ng-container *ngIf="data === hotelId.HotelMision">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59946.792808522674!2d-98.7988608279588!3d20.105887000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a753342659df%3A0xcdc33ffa583d81e2!2sHotel%20Misi%C3%B3n%20Pachuca!5e0!3m2!1ses-419!2smx!4v1699930959580!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</ng-container>
+	<ng-container *ngIf="data === hotelId.HotelBlanco">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14986.815119648174!2d-98.73606714458009!3d20.104665900000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a7a207c5deb7%3A0x3e895e9e3d0f8a4c!2sHotel%20Blanco%20Pachuca!5e0!3m2!1ses-419!2smx!4v1699931287943!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</ng-container>
+	<ng-container *ngIf="data === hotelId.HotelFiestaInn">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42394.7168778289!2d-98.76043383000817!3d20.083967633774357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a0b77c7af305%3A0xfbae258b3c39ed3!2sFiesta%20Inn%20Pachuca%20Gran%20Patio!5e0!3m2!1ses-419!2smx!4v1700625848867!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</ng-container>
+	<ng-container *ngIf="data === hotelId.HotelFiestaMexicana">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35641.44288250103!2d-98.75409056654996!3d20.119641427297562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d109f0800cbda1%3A0x8ef06716e6942dd4!2sHotel%20Fiesta%20Mexicana!5e0!3m2!1ses-419!2smx!4v1700625511838!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</ng-container>
+</section>
+<footer mat-dialog-actions align="end">
+	<button mat-button mat-dialog-close>
+		{{ 'BUTTONS.CLOSE' | translate }}
+	</button>
+</footer>

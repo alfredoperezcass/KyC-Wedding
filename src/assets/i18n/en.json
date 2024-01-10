@@ -1,0 +1,69 @@
+{
+	"MENU": {
+		"WELCOME": "Welcome",
+		"PASSES": "Passes",
+		"SCHEDULE": "Schedule",
+		"LODGING": "Lodging",
+		"OUR_DREAMS": "Our dreams",
+		"DRESS_CODE": "Dress code",
+		"BUTTON_LANG": "Español"
+	},
+	"COUNTDOWN": {
+		"LABEL": "Countdown",
+		"DAYS": "Days",
+		"HOURS": "Hours",
+		"MINUTES": "Minutes",
+		"SECONDS": "Seconds"
+	},
+	"BUTTONS": {
+		"CLOSE": "Close"
+	},
+	"WELCOME": {
+		"DATE": "Feb.03.24",
+		"OUR_WEDDING": "Our wedding"
+	},
+	"PASSES": {
+		"WE_MARRIED": "We married!",
+		"NO_KIDS": "Due to security measures in place, we suggest that do not bring children. We hope that this decision does not prevent us from having your presence.",
+		"MESSAGE": "There are moments in life that are special on their own. Sharing them with the people we cherish makes them magical and unforgettable."
+	},
+	"SCHEDULE": {
+		"LABEL": "Schedule",
+		"RELIGIOUS_CEREMONY": "Religious Ceremony",
+		"RECEPTION": "Reception",
+		"COCKTAIL": "Welcome cocktail",
+		"BRIDE_AND_GROOM_ENTRANCE": "Bride and Groom Entrance",
+		"FEAST": "Feast",
+		"PARTY_STARTS": "Party Starts",
+		"PARKING_OPTIONS": "Parking Options",
+		"VALS": "Brindis",
+		"BANDA": "Grupo norteño"
+	},
+	"LODGING": {
+		"LABEL": "Lodging"
+	},
+	"GIFT_TABLE": {
+		"MESSAGE": "Our home is complete, but if you want to give us a gift, add miles to our honeymoon!",
+		"ENVELOPE_RAIN": {
+			"LABEL": "Envelope rain",
+			"MESSAGE": "Or if you prefer a cash gift, you can do so at our envelope rain table that will be at the event."
+		},
+		"DIALOG": {
+			"LABEL": "Thanks!",
+			"BANK_INFO": "Here are the options for {{ value }}.",
+			"MESSAGE": "From the bottom of our heart, thank you for your contribution to our honeymoon.",
+			"SNACK_BAR_MESSAGE": "The information was copied to your clipboard"
+		}
+	},
+	"DRESS_CODE": {
+		"LABEL": "Black Tie",
+		"MESSAGE": "Dress code must be worn: men tie or bow tie, women long dress",
+		"SMOKING": "Suit with tie or bow",
+		"LONG_DRESS": "Long dress"
+	},
+	"SOCIAL_MEDIA": {
+		"MESSAGE": "Help us document our wedding! Upload your photos and videos and tag us with the hashtag",
+		"HASHTAG": "#Ms&MrValencia",
+		"CLIPBOARD": "The hashtag was copied to your clipboard"
+	}
+}

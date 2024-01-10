@@ -1,0 +1,53 @@
+{
+	"MENU": {
+		"WELCOME": "Bienvenido",
+		"PASSES": "Pases",
+		"SCHEDULE": "Cronograma",
+		"LODGING": "Hospedaje",
+		"JJ": "Galería",
+		"OUR_DREAMS": "Nuestros sueños",
+		"GIFT_TABLE": "Mesa de regalos",
+		"DRESS_CODE": "Código de vestimenta",
+		"SOCIAL_MEDIA": "Redes sociales",
+		"BUTTON_LANG": "English"
+	},
+	"COUNTDOWN": {
+		"LABEL": "Cuenta regresiva",
+		"DAYS": "Días",
+		"HOURS": "Horas",
+		"MINUTES": "Minutos",
+		"SECONDS": "Segundos"
+	},
+	"BUTTONS": {
+		"CLOSE": "Cerrar"
+	},
+	"WELCOME": {
+		"DATE": "03.Feb.24",
+		"OUR_WEDDING": "Nuestra Boda"
+	},
+	"PASSES": {
+		"WE_MARRIED": "¡Nos casamos!",
+		"NO_KIDS": "Por medidas de seguridad del lugar, te sugerimos no llevar niños, esperamos que esto no impida que contemos con tu presencia.",
+		"MESSAGE": "Hay momentos en la vida que son especiales por sí solos. Compartirlos con las personas que apreciamos, los convierte en mágicos e inolvidables."
+	},
+	"SCHEDULE": {
+		"LABEL": "Cronograma",
+		"RELIGIOUS_CEREMONY": "Ceremonia Religiosa",
+		"RECEPTION": "Recepción",
+		"BRIDE_AND_GROOM_ENTRANCE": "Entrada de los novios",
+		"FEAST": "Banquete",
+		"PARTY_STARTS": "¡Qué empiece la fiesta!",
+		"PARKING_OPTIONS": "Estacionamientos",
+		"VALS": "Brindis",
+		"BANDA": "Grupo norteño"
+	},
+	"LODGING": {
+		"LABEL": "Hospedaje"
+	},
+	"DRESS_CODE": {
+		"LABEL": "Etiqueta",
+		"MESSAGE": "Hay que llevar vestimenta de etiqueta: hombres traje de gala, mujeres, vestido",
+		"SMOKING": "Traje de gala",
+		"LONG_DRESS": "Vestido"
+	}
+}

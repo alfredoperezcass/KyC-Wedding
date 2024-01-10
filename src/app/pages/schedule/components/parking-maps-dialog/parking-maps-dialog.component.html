@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>{{ headlining }}</h1>
+<section mat-dialog-content>
+	<div class="maps-container">
+		<ng-container *ngIf="data">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234.189171401653!2d-98.70620280594159!3d20.09116893350075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a10b63a872d3%3A0x3c1185a3798a337e!2sHacienda%20Santa%20Cecilia!5e0!3m2!1ses-419!2smx!4v1699931937928!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</ng-container>
+	</div>
+</section>
+<footer mat-dialog-actions align="end">
+	<button mat-flat-button mat-dialog-close>{{ 'BUTTONS.CLOSE' | translate }}</button>
+</footer>

@@ -1,0 +1,19 @@
+<nav [class.toggle]="toggle">
+	<div class="container" [class.toggle]="toggle">
+		<img src="assets/images/logoCA2.png" />
+		<button
+			matRipple
+			[matRippleColor]="'rgb(0 0 0 / 8%)'"
+			[class.toggle]="toggle"
+			(click)="onToggle()"
+		>
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</div>
+	<navigation *ngIf="toggle" />
+</nav>
+<main>
+	<router-outlet />
+</main>

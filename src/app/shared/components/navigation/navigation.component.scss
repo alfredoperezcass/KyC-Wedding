@@ -1,0 +1,157 @@
+/*:host {
+	--animate-delay: 80ms;
+
+	display: inline-block;
+	width: auto;
+	height: auto;
+	bottom: 0.5rem;
+	position: fixed;
+	transition: all 0.16s ease-out;
+	border-radius: 50%;
+	background: transparent;
+	z-index: 10;
+	box-shadow: 0 0 1rem rgb(0 0 0 / 32%);
+
+	&.active {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		bottom: 0;
+		background: var(--primary-dark);
+		width: 100%;
+		height: 100vh;
+		border-radius: 0;
+		box-shadow: none;
+	}
+}
+
+button {
+	--size: 3rem;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 2px 0;
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+	background: var(--primary-dark);
+	border: 0;
+
+	span {
+		display: block;
+		width: 1.25rem;
+		height: 2px;
+		background: #fff;
+		transition: all 0.16s ease-out;
+
+		&:nth-child(2) {
+			transform: scaleX(0.75);
+		}
+
+		&:nth-child(3) {
+			transform: scaleX(0.5);
+		}
+	}
+
+	&.active {
+		bottom: 0.5rem;
+		position: fixed;
+
+		span {
+			position: absolute;
+
+			&:nth-child(1) {
+				opacity: 0;
+			}
+
+			&:nth-child(2) {
+				transform: scaleX(1) rotate(45deg);
+			}
+
+			&:nth-child(3) {
+				transform: scaleX(1) rotate(-45deg);
+			}
+		}
+	}
+} 
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 0.5rem 0;
+	width: calc(100% - 4rem);
+
+	a {
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 1.5rem;
+		color: rgb(0 0 0 / 32%);
+		text-align: center;
+
+		&.ornamented {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			gap: 0 0.5rem;
+			width: auto;
+			color: hsl(0, 0%, 0%);
+
+			svg {
+				&:first-child {
+					transform: rotate(180deg);
+				}
+
+				&:last-child {
+					transform: rotateX(180deg);
+				}
+			}
+		}
+	}
+}
+
+.lang-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	height: 2rem;
+	padding: 0 1rem;
+	border-radius: 2rem;
+	color: hsl(0, 0%, 0%);
+	background: rgb(0 0 0 / 16%);
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 0.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}*/
+
+:host {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 0.5rem 0;
+}
+
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: rgb(0 0 0 / 50%);
+	text-align: center;
+
+	&.ornamented {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0 0.5rem;
+		width: auto;
+		color: hsl(0, 0%, 0%);
+	}
+}
