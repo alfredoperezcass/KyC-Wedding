@@ -45,9 +45,9 @@
 		"LABEL": "Hospedaje"
 	},
 	"DRESS_CODE": {
-		"LABEL": "Etiqueta",
-		"MESSAGE": "Hay que llevar vestimenta de etiqueta: hombres traje de gala, mujeres, vestido",
-		"SMOKING": "Traje de gala",
+		"LABEL": "Formal",
+		"MESSAGE": "Hay que llevar vestimenta de etiqueta: hombres traje formal, mujeres, vestido",
+		"SMOKING": "Traje formal",
 		"LONG_DRESS": "Vestido"
 	}
 }
