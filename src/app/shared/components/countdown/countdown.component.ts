@@ -35,7 +35,7 @@ import { TranslateModule } from '@ngx-translate/core'
 export class CountdownComponent {
 	readonly countDown$ = timer(0, 1000).pipe(
 		map(() => {
-			const finaleDate = new Date('2024-02-03T15:00:00.000Z').getTime()
+			const finaleDate = new Date('2024-02-24T17:00:00.000Z').getTime()
 			const currentDate = new Date().getTime()
 			const distance = finaleDate - currentDate
 			const days = Math.floor(distance / (1000 * 60 * 60 * 24))
