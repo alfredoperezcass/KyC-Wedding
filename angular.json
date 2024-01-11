@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"jj-wedding": {
+		"kc-wedding": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
@@ -17,7 +17,7 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
-						"outputPath": "dist/jj-wedding",
+						"outputPath": "dist/kc-wedding",
 						"index": "src/index.html",
 						"main": "src/main.ts",
 						"polyfills": ["zone.js"],
@@ -61,10 +61,10 @@
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "jj-wedding:build:production"
+							"browserTarget": "kc-wedding:build:production"
 						},
 						"development": {
-							"browserTarget": "jj-wedding:build:development"
+							"browserTarget": "kc-wedding:build:development"
 						}
 					},
 					"defaultConfiguration": "production"
@@ -72,7 +72,7 @@
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
 					"options": {
-						"browserTarget": "jj-wedding:build"
+						"browserTarget": "kc-wedding:build"
 					}
 				},
 				"test": {
