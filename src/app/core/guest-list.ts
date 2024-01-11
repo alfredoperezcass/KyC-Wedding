@@ -5,11 +5,11 @@ interface GuestList {
 }
 
 export const GUEST_LIST: GuestList = {
-	Victor_Zempoalteca: {
-		guestId: 'Victor_Zempoalteca',
-		title: 'Hola Victor',
+	andrea_venera: {
+		guestId: 'andrea_venera',
+		title: 'Hola Andrea',
 		message:
-			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto inventore odio. Exercitationem minus nesciunt enim unde beatae eos ducimus',
+			'Con gran felicidad en nuestros corazones, les extendemos una invitación especial para celebrar el amor que nos une en el día de nuestra boda. Su presencia hará que este momento sea aún más memorable. Únanse a nosotros para compartir risas, alegrías y el inicio de esta nueva etapa.',
 		passes: 'Pase (2 personas)',
 		ourDreams: {
 			message:
