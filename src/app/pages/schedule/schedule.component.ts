@@ -14,52 +14,35 @@ export class ScheduleComponent {
 
 	readonly scheduleList: ScheduleList = [
 		{
-			label: 'SCHEDULE.RELIGIOUS_CEREMONY',
-			time: '1:00 PM',
-			delay: '',
-			maps: {
-				hasParkings: false,
-				isChurch: true,
-				buildingName:
-					'Iglesia De San Juan Bautista, San Juan Solis, Hidalgo',
-				image: 'assets/images/iglesiaSanJuan.jpg',
-			},
-		},
-		{
 			label: 'SCHEDULE.RECEPTION',
-			time: '4:00 PM',
+			time: '5:00 PM',
 			delay: 'animate__delay-1s',
 			maps: {
 				hasParkings: true,
 				isChurch: false,
 				buildingName:
-					'Salón VIP, Hacienda Santa Cecilia, Carboneras, Pachuca, Hidalgo',
-				image: 'assets/images/haciendaSantaCecilia.jpeg',
+					'Manga, avenida miramar club nautico Marina',
+				image: 'assets/images/mabare_1.jpg',
 			},
 		},
 		{
 			label: 'SCHEDULE.BRIDE_AND_GROOM_ENTRANCE',
-			time: '5:00 PM',
-			delay: 'animate__delay-3s',
-		},
-		{
-			label: 'SCHEDULE.FEAST',
-			time: '5:10 PM',
+			time: '5:30 PM',
 			delay: 'animate__delay-3s',
 		},
 		{
 			label: 'SCHEDULE.VALS',
-			time: '8:00 PM',
+			time: '6:30 PM',
+			delay: 'animate__delay-3s',
+		},
+		{
+			label: 'SCHEDULE.FEAST',
+			time: '7:00 PM',
 			delay: 'animate__delay-4s',
 		},
 		{
 			label: 'SCHEDULE.PARTY_STARTS',
-			time: '10:00 PM - 12:00 AM',
-			delay: 'animate__delay-5s',
-		},
-		{
-			label: 'SCHEDULE.BANDA',
-			time: '12:00 AM - 2:00 AM',
+			time: '7:30 PM - 9:00 PM',
 			delay: 'animate__delay-5s',
 		},
 	]
