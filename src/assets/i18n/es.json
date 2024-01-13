@@ -1,13 +1,14 @@
 {
 	"MENU": {
 		"WELCOME": "Bienvenido",
-		"PASSES": "Pases",
+		"PASSES": "Invitados",
 		"SCHEDULE": "Cronograma",
 		"LODGING": "Hospedaje",
 		"JJ": "Galería",
 		"OUR_DREAMS": "Nuestros sueños",
 		"GIFT_TABLE": "Mesa de regalos",
 		"DRESS_CODE": "Código de vestimenta",
+		"GIFT": "Regalos",
 		"SOCIAL_MEDIA": "Redes sociales",
 		"BUTTON_LANG": "English"
 	},
@@ -28,7 +29,8 @@
 	"PASSES": {
 		"WE_MARRIED": "¡Nos casamos!",
 		"NO_KIDS": "Por medidas de seguridad del lugar, te sugerimos no llevar niños, esperamos que esto no impida que contemos con tu presencia.",
-		"MESSAGE": "Hay momentos en la vida que son especiales por sí solos. Compartirlos con las personas que apreciamos, los convierte en mágicos e inolvidables."
+		"MESSAGE": "Hay momentos en la vida que son especiales por sí solos. Compartirlos con las personas que apreciamos, los convierte en mágicos e inolvidables.",
+		"MESSAGE_TEXT": "Mejores son dos que uno; porque tienen mejor paga de su trabajo porque si cayeren, el uno levantará a su compañero; pero ¡ay del solo! que cuando cayere, no habrá segundo que lo levante. También si dos durmieren juntos, se calentarán mutuamente; mas ¿Cómo se calentará uno solo?"
 	},
 	"SCHEDULE": {
 		"LABEL": "Cronograma",

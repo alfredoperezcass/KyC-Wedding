@@ -1,92 +1,22 @@
-<ng-container *ngFor="let hotel of hotels">
-	<div class="hotel-container animate__animated animate__fadeInUp" [ngClass]="hotel.delay">
-		<h3>{{ hotel.name }}</h3>
-		<img [src]="hotel.image" [alt]="hotel.name" />
-		<ul>
-			<li>
-				<a class="contact-btn" [href]="hotel.tel" matRipple [matRippleColor]="ripple">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="icon icon-tabler icon-tabler-phone"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						stroke-width="1.25"
-						stroke="currentColor"
-						fill="none"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					>
-						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-						<path
-							d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
-						></path>
-					</svg>
-				</a>
-			</li>
-			<li>
-				<a
-					class="contact-btn"
-					[href]="hotel.website"
-					target="_blank"
-					matRipple
-					[matRippleColor]="ripple"
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="icon icon-tabler icon-tabler-world-www"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						stroke-width="1.25"
-						stroke="currentColor"
-						fill="none"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					>
-						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-						<path d="M19.5 7a9 9 0 0 0 -7.5 -4a8.991 8.991 0 0 0 -7.484 4"></path>
-						<path d="M11.5 3a16.989 16.989 0 0 0 -1.826 4"></path>
-						<path d="M12.5 3a16.989 16.989 0 0 1 1.828 4"></path>
-						<path d="M19.5 17a9 9 0 0 1 -7.5 4a8.991 8.991 0 0 1 -7.484 -4"></path>
-						<path d="M11.5 21a16.989 16.989 0 0 1 -1.826 -4"></path>
-						<path d="M12.5 21a16.989 16.989 0 0 0 1.828 -4"></path>
-						<path d="M2 10l1 4l1.5 -4l1.5 4l1 -4"></path>
-						<path d="M17 10l1 4l1.5 -4l1.5 4l1 -4"></path>
-						<path d="M9.5 10l1 4l1.5 -4l1.5 4l1 -4"></path>
-					</svg>
-				</a>
-			</li>
-			<li>
-				<button
-					class="contact-btn"
-					matRipple
-					[matRippleColor]="ripple"
-					(click)="onOpenDialog(hotel.hotelId)"
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="icon icon-tabler icon-tabler-brand-google-maps"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						stroke-width="1.25"
-						stroke="currentColor"
-						fill="none"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					>
-						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-						<path d="M12 9.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0"></path>
-						<path d="M6.428 12.494l7.314 -9.252"></path>
-						<path d="M10.002 7.935l-2.937 -2.545"></path>
-						<path d="M17.693 6.593l-8.336 9.979"></path>
-						<path
-							d="M17.591 6.376c.472 .907 .715 1.914 .709 2.935a7.263 7.263 0 0 1 -.72 3.18a19.085 19.085 0 0 1 -2.089 3c-.784 .933 -1.49 1.93 -2.11 2.98c-.314 .62 -.568 1.27 -.757 1.938c-.121 .36 -.277 .591 -.622 .591c-.315 0 -.463 -.136 -.626 -.593a10.595 10.595 0 0 0 -.779 -1.978a18.18 18.18 0 0 0 -1.423 -2.091c-.877 -1.184 -2.179 -2.535 -2.853 -4.071a7.077 7.077 0 0 1 -.621 -2.967a6.226 6.226 0 0 1 1.476 -4.055a6.25 6.25 0 0 1 4.811 -2.245a6.462 6.462 0 0 1 1.918 .284a6.255 6.255 0 0 1 3.686 3.092z"
-						></path>
-					</svg>
-				</button>
-			</li>
-		</ul>
+<ng-container>
+	<div class="hotel-container animate__animated animate__fadeInUp" >
+		<span ><img src="assets/images/charity2.png" alt="" width="50px" height="50px"></span>
+		
+		<h1>Regalos</h1>
+		<p>Tu presencia en nuestra boda es el mejor regalo que podríamos recibir. Si bien tu compañía es lo más importante para nosotros, si estás considerando hacernos un regalo, agradecemos mucho cualquier contribución económica para ayudarnos a dar inicio a esta nueva etapa de nuestras vidas. Tu generosidad será apreciada, pero sobre todo, tu amor y buenos deseos son invaluables. ¡Gracias por compartir este día tan especial con nosotros!</p>
+	</div>
+	<div class="flex-container">
+		<div class="flex-item">
+			<span><img src="assets/images/bancolombia.png" alt="Bancolombia"  width="30px" height="50px"></span>
+			<p class="bank-text">Karen Venera Montenegro</p>
+			<p class="bank-text">52300034772</p>
+			<p class="bank-text">CC 1051418448</p>
+		</div>
+
+		<div class="flex-item">
+			<span><img src="assets/images/nequi.svg" alt="Bancolombia"  width="30px" height="50px"></span>
+			<p class="bank-text">Karen Venera Montenegro</p>
+			<p class="bank-text"> 3015437876</p>
+		</div>
 	</div>
 </ng-container>

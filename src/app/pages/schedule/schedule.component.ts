@@ -14,20 +14,20 @@ export class ScheduleComponent {
 
 	readonly scheduleList: ScheduleList = [
 		{
-			label: 'SCHEDULE.RECEPTION',
+			label: 'SCHEDULE.BRIDE_AND_GROOM_ENTRANCE',
 			time: '5:00 PM',
 			delay: 'animate__delay-1s',
 			maps: {
 				hasParkings: true,
 				isChurch: false,
 				buildingName:
-					'Manga, avenida miramar club nautico Marina',
+					'Manga, avenida miramar club nautico Marina - Cartagena de Indias',
 				image: 'assets/images/mabare_1.jpg',
 			},
 		},
 		{
-			label: 'SCHEDULE.BRIDE_AND_GROOM_ENTRANCE',
-			time: '5:30 PM',
+			label: 'SCHEDULE.RECEPTION',
+			time: '6:00 PM',
 			delay: 'animate__delay-3s',
 		},
 		{
@@ -37,14 +37,9 @@ export class ScheduleComponent {
 		},
 		{
 			label: 'SCHEDULE.FEAST',
-			time: '7:00 PM',
+			time: '7:30 PM',
 			delay: 'animate__delay-4s',
-		},
-		{
-			label: 'SCHEDULE.PARTY_STARTS',
-			time: '7:30 PM - 9:00 PM',
-			delay: 'animate__delay-5s',
-		},
+		}
 	]
 
 	onOpenDialogMap(isChurch: boolean, isGoogle: boolean): void {

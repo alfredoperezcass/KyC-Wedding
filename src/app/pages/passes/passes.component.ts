@@ -10,6 +10,9 @@ import { GlobalState } from '@core/global.state'
 				{{ 'PASSES.WE_MARRIED' | translate }}
 			</strong>
 			<p class="animate__animated animate__fadeInDown animate__delay-2s">
+			{{ 'PASSES.MESSAGE_TEXT' | translate }}
+			</p>
+			<p class="animate__animated animate__fadeInDown animate__delay-2s">
 			{{ 'PASSES.MESSAGE' | translate }}
 			</p>
 			<span class="animate__animated animate__fadeInUp animate__delay-3s">
@@ -18,6 +21,11 @@ import { GlobalState } from '@core/global.state'
 			<small class="animate__animated animate__fadeInDown animate__delay-4s">
 				{{ 'PASSES.NO_KIDS' | translate }}
 			</small>
+			<div class="buttons-container">
+				<button class="wedding-button">Confirmar Asistencia</button>
+				<button class="wedding-button">Declinar</button>
+				<button class="wedding-button">No estoy Seguro(a)</button>
+			</div>
 		</ng-container>
 	`,
 	styleUrls: ['./passes.component.scss'],
