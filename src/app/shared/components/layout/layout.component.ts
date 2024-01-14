@@ -48,11 +48,10 @@ export class LayoutComponent implements OnInit {
 			})
 
 		this.activatedRoute.params.subscribe(({ guest: guestId }) => {
-      console.log('guestId', guestId);
-
       this.guestService.getGuest(guestId).subscribe((_guest) => {
         if (_guest) {
           localStorage.setItem('guest', JSON.stringify(_guest))
+          this.globalState.guest.next(_guest)
         } else {
           localStorage.clear()
           this.globalState.guest.next(null)
