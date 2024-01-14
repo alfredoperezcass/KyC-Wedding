@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiBackendPersonal: 'http://localhost:3000'
+  apiBackendPersonal: 'https://backend-personal.azurewebsites.net'
 };
