@@ -3,6 +3,8 @@ export interface Guest {
 	title: string
 	message: string
 	passes: string
+  gender: string
+  confirmation: string
 	ourDreams: {
 		message: string
 		sub: string

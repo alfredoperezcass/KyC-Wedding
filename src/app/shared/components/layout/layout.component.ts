@@ -5,6 +5,9 @@ import { combineLatest, filter } from 'rxjs'
 
 import guestList from '@assets/guest-list.json'
 import { GlobalState } from '@core/global.state'
+import { environment } from '../../../../environment/environment';
+import { Guest } from '@core/guest.interfaces'
+import { GuestService } from '@core/guest.service'
 
 @Component({
 	templateUrl: './layout.component.html',
@@ -14,6 +17,8 @@ export class LayoutComponent implements OnInit {
 	private readonly router = inject(Router)
 	private readonly activatedRoute = inject(ActivatedRoute)
 	private readonly globalState = inject(GlobalState)
+  private readonly guestService = inject(GuestService)
+  guest: Guest;
 
 	readonly ornaments = ['top-left', 'top-right', 'bottom-left', 'bottom-right']
 
@@ -34,6 +39,7 @@ export class LayoutComponent implements OnInit {
 	}
 
 	ngOnInit(): void {
+
 		this.router.events
 			.pipe(filter((event) => event instanceof NavigationEnd))
 			.subscribe(({ urlAfterRedirects }: NavigationEnd) => {
@@ -42,19 +48,19 @@ export class LayoutComponent implements OnInit {
 			})
 
 		this.activatedRoute.params.subscribe(({ guest: guestId }) => {
-			if (guestList[guestId]) {
-				const guest = guestList[guestId]
+      console.log('guestId', guestId);
 
-				localStorage.setItem('guest', JSON.stringify(guest))
-				this.globalState.guest.next(guest)
-			} else {
-				localStorage.clear()
-				this.globalState.guest.next(null)
-				this.router.navigate(['/sin-invitacion'])
-			}
+      this.guestService.getGuest(guestId).subscribe((_guest) => {
+        if (_guest) {
+          localStorage.setItem('guest', JSON.stringify(_guest))
+        } else {
+          localStorage.clear()
+          this.globalState.guest.next(null)
+          this.router.navigate(['/sin-invitacion'])
+        }
+      })
 		})
 	}
-
 	onToggle(): void {
 		this.toggle = !this.toggle
 	}
