@@ -3,7 +3,6 @@ import { Component, inject } from '@angular/core'
 import { GlobalState } from '@core/global.state'
 import { environment } from '../../../environment/environment';
 import { GuestService } from '@core/guest.service';
-import { ActivatedRoute } from '@angular/router';
 import { Guest } from '@core/guest.interfaces';
 
 @Component({
@@ -24,10 +23,10 @@ import { Guest } from '@core/guest.interfaces';
 				<small class="animate__animated animate__fadeInDown animate__delay-4s">
 					{{ 'PASSES.NO_KIDS' | translate }}
 				</small>
-				<div class="buttons-container" *ngIf="confirmation == '' || confirmation == 'No esta Seguro(a)'">
+				<div class="buttons-container" *ngIf="confirmation == '' || confirmation == 'not_sure'">
 					<button class="wedding-button" (click)="confirmInvitation('Confirmado')">{{ loading === 'Confirmado' ? 'Cargando...' : 'Confirmar Asistencia' }}</button>
 					<button class="wedding-button" (click)="confirmInvitation('Rechazado')">{{ loading === 'Rechazado' ? 'Cargando...' : 'Declinar' }}</button>
-					<button class="wedding-button" (click)="confirmInvitation('No esta Seguro(a)')"  *ngIf="confirmation != 'No esta Seguro(a)'">{{ loading === 'No esta Seguro(a)' ? 'Cargando...' : 'No esta Seguro(a)' }}</button>
+					<button class="wedding-button" (click)="confirmInvitation('No esta Seguro(a)')"  *ngIf="confirmation != 'not_sure'">{{ loading === 'No esta Seguro(a)' ? 'Cargando...' : 'No esta Seguro(a)' }}</button>
 				</div>
         <div class="success-container" *ngIf="confirmation == 'Confirmado'">
           <p>Gracias por confirmar, te esperamos para celebrar juntos nuestra fecha.</p>
@@ -35,7 +34,7 @@ import { Guest } from '@core/guest.interfaces';
         <div class="success-container" *ngIf="confirmation == 'Rechazado'">
           <p>Lamentamos profundamente saber que no podrás acompañarnos en este momento tan significativo. Entendemos que la vida nos lleva por diferentes caminos y apreciamos sinceramente tus buenos deseos y pensamientos en esta etapa tan importante de nuestras vidas.</p>
         </div>
-        <div class="success-container" *ngIf="confirmation == 'No esta Seguro(a)'" >
+        <div class="success-container" *ngIf="confirmation == 'not_sure'" >
           <p>Entendemos que la vida puede estar llena de compromisos y cambios, y respetamos tu tiempo y consideración al pensar en tu asistencia. Sabemos que las circunstancias pueden ser diversas, y queremos asegurarte que cualquier decisión que tomes será completamente comprendida y respetada.</p>
         </div>
 			</div>
@@ -46,13 +45,18 @@ import { Guest } from '@core/guest.interfaces';
 export class PassesComponent {
 	private readonly globalState = inject(GlobalState)
   private readonly guestService = inject(GuestService)
-  private readonly activatedRoute = inject(ActivatedRoute)
 
   guestData: Guest;
   guestId: any;
   personaText: string;
   confirmation: string;
   loading: string;
+
+  messageConfirm = {
+    "Confirmado": "Gracias por confirmar, te esperamos para celebrar juntos nuestra fecha.",
+    "Rechazado": "Lamentamos profundamente saber que no podrás acompañarnos en este momento tan significativo. Entendemos que la vida nos lleva por diferentes caminos y apreciamos sinceramente tus buenos deseos y pensamientos en esta etapa tan importante de nuestras vidas.",
+    "not_sure": "Entendemos que la vida puede estar llena de compromisos y cambios, y respetamos tu tiempo y consideración al pensar en tu asistencia. Sabemos que las circunstancias pueden ser diversas, y queremos asegurarte que cualquier decisión que tomes será completamente comprendida y respetada."
+  }
 
 	readonly guest$ = this.globalState.guest$
 
@@ -62,7 +66,7 @@ export class PassesComponent {
       this.guestId = guest.guestId;
       this.guestService.getGuest(guest.guestId).subscribe((_guest) => {
         this.personaText = (Number(_guest?.passes) > 1) ? 'Personas' : 'persona';
-        this.confirmation = _guest?.confirmation;
+        this.confirmation = (_guest?.confirmation === 'No esta Seguro(a)') ? 'not_sure': _guest?.confirmation;
         this.guestData = _guest;
       });
     });
@@ -93,7 +97,7 @@ export class PassesComponent {
           this.guestService.getGuest(this.guestId).subscribe((_guest) => {
             this.guestId = _guest?.guestId;
             this.personaText = (Number(_guest?.passes) > 1) ? 'Personas' : 'persona';
-            this.confirmation = _guest?.confirmation;
+            this.confirmation = (_guest?.confirmation === 'No esta Seguro(a)') ? 'not_sure': _guest?.confirmation;
           });
           this.loading = null;
         })

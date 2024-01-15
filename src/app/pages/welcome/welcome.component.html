@@ -8,5 +8,13 @@
 		<small class="animate__animated animate__fadeInUp animate__delay-2s">
 			{{ 'WELCOME.OUR_WEDDING' | translate }}
 		</small>
+    <div class="buttons-container" *ngIf="confirmation == '' || confirmation == 'not_sure'">
+      <button class="wedding-button" (click)="confirmInvitation('Confirmado')">{{ loading === 'Confirmado' ? 'Cargando...' : 'Confirmar Asistencia' }}</button>
+      <button class="wedding-button" (click)="confirmInvitation('Rechazado')">{{ loading === 'Rechazado' ? 'Cargando...' : 'Declinar' }}</button>
+      <button class="wedding-button" (click)="confirmInvitation('No esta Seguro(a)')"  *ngIf="confirmation != 'not_sure'">{{ loading === 'No esta Seguro(a)' ? 'Cargando...' : 'No esta Seguro(a)' }}</button>
+    </div>
+    <div class="mesaage-container" *ngIf="confirmation">
+      <p>{{messageConfirm[confirmation]}}</p>
+    </div>
 	</div>
 </section>
